@@ -34,9 +34,11 @@ def show_image_array(img):
     """
     Show image using matplotlib.
     """
-
-    plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY))
-    plt.show()
+    
+    colored = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    print(colored[int(colored.shape[0]/2),int(colored.shape[1]/2)])
+    #plt.imshow(colored)
+    #plt.show()
 
 
 def mask(base_img, mask_img, threshold=5):
@@ -57,6 +59,8 @@ def save_image(path, img):
     Save image.
     """
 
+    print(path)
+    print(img)
     cv2.imwrite(path, img)
 
 
