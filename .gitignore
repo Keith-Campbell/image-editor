@@ -1,6 +1,10 @@
 # Local
 .DS_Store
 data/
+takenoko
+takenoko.tar.gz
+original_images
+cars_dataset
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -131,3 +135,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
